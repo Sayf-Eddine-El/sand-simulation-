@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      style="background-color: black; border: 2px solid black"
+      id="canvas"
+    ></canvas>
+    <div>
+      <h1 id="fps">Fps : 60</h1>
+      <div
+        style="
+          display: flex;
+          gap: 10px;
+          justify-content: start;
+          align-items: center;
+        "
+      >
+        <select style="padding: 10px; font-size: 20px" name="block" id="block">
+          <option value="water">Water</option>
+          <option value="sand">Sand</option>
+          <option value="stone">stone</option>
+          <option value="steam">steam</option>
+        </select>
+        <div>
+          <select
+            style="padding: 10px; font-size: 20px"
+            name="block"
+            id="brush"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <button style="padding: 13px; font-size: medium" onclick="reset()">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="withGrid.js"></script>
+  </body>
+</html>
